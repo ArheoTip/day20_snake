@@ -1,7 +1,7 @@
 from turtle import Turtle
 ALIGNMENT ="center"
 FONT = ('Arial', 20, 'normal')
-# x
+
 
 class Scoreboard(Turtle):
 
@@ -28,24 +28,10 @@ class Scoreboard(Turtle):
         self.score = 0
         self.update_scoreboard()
 
-    # def game_over(self):
-    #     self.goto(0,0)
-    #     self.write(f"GAME OVER", align=ALIGNMENT, font=FONT)
 
     def increase_score(self):
         self.score += 1
         self.update_scoreboard()
 
-    # def save_high_score(self):
-    #     with open("high_scores.txt", "a") as f:
-    #         f.write(f"\n{self.high_score}")
-    #
-    # def read_high_score(self):
-    #     with open("high_scores.txt", "r+") as f:
-    #         cont = f.read().strip()
-    #         # old_high_score = int(f.readline().strip())
-    #         if cont:
-    #             self.high_score = cont
-    #         else:
-    #             self.high_score = 0
+
 
